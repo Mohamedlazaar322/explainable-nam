@@ -1,0 +1,60 @@
+===========================================================================
+AUTOMATED DECISION NOTICE
+===========================================================================
+Decision date:      2026-06-03 10:36:08
+Decision:           DECLINE
+Confidence (prob):  1.5%
+Decision threshold: 15%
+
+LOGIC OF THE DECISION  (GDPR Art. 22 §3 / Recital 71)
+---------------------------------------------------------------------------
+This decision was produced by a Neural Additive Model. The model
+evaluated 12 features. Each feature has its own learned
+contribution function; the final score is the exact sum of these
+per-feature contributions plus a bias term. The score is compared
+to the threshold of 15%; values at or above the threshold result
+in ACCEPT, below in DECLINE.
+
+PRINCIPAL REASONS  (ECOA / Regulation B - top 4, ranked)
+---------------------------------------------------------------------------
+Principal reasons for decline:
+
+  1. Credit Rating
+     Observed value:            2.0
+     Contribution to decision:  -1.893
+
+  2. Reward_Cash Back
+     Observed value:            1.0
+     Contribution to decision:  -0.983
+
+  3. Income Level
+     Observed value:            1.0
+     Contribution to decision:  -0.344
+
+  4. Own Your Home
+     Observed value:            1.0
+     Contribution to decision:  -0.230
+
+Factors that pushed AGAINST decline:
+  - Mailer Type_Postcard = 1.0  (contribution: +0.245)
+
+SIGNIFICANCE AND CONSEQUENCES  (GDPR Recital 71)
+---------------------------------------------------------------------------
+Consequence: the credit-card offer will not be extended.
+Right to contest: the customer may request human review under
+GDPR Art. 22 §3 and provide additional information.
+
+METHOD AND TRANSPARENCY  (EU AI Act Art. 13)
+---------------------------------------------------------------------------
+Model:        Neural Additive Model (Agarwal et al., 2021)
+Property:     Additive by construction - sum of contributions
+              exactly reproduces the model score.
+Determinism:  Same input always produces the same explanation.
+
+Math verification:
+  sum(contributions) + bias = -4.1903
+  model logit reconstructed = -4.1903   (match = exact)
+
+===========================================================================
+END OF NOTICE
+===========================================================================
