@@ -1,6 +1,6 @@
 # explainable-nam
 
-A Python library implementing Neural Additive Models (NAM) for binary classification on tabular data, with mathematically exact per-feature explanations.
+I independently built this small Python library implementing Neural Additive Models (NAM) for binary classification on tabular data. The architecture has one small neural network per input feature; the final prediction is the exact sum of each feature's contribution plus a bias. Because features never interact inside the network, the per-feature explanation isn't reconstructed after the fact — it IS the model's actual computation. The sum of contributions matches the model's output to floating-point precision
 
 
 ---
